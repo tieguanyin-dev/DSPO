@@ -1,0 +1,17 @@
+@import 'http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,greek-ext,cyrillic-ext,greek,vietnamese,cyrillic,latin-ext';
+ul#css3menu0{
+	margin:0;list-style:none;padding:0 3px 3px;background-color:none;border-width:0;border-style:solid;border-color:;font-size:0;z-index:999;position:relative;display:block;float:left;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;}
+ul#css3menu0 li{
+	display:block;white-space:nowrap;font-size:0;}
+ul#css3menu0>li{
+	margin:3px 0 0;}
+ul#css3menu0 a:active, ul#css3menu0 a:focus{
+	outline-style:none;}
+ul#css3menu0 a{
+	display:block;vertical-align:middle;text-align:left;text-decoration:none;font:20px Arial,Helvetica,sans-serif;color:#d5d5d5;cursor:pointer;padding:6px 10px 6px 10px;background-color:;background-repeat:repeat;border-width:0px;border-style:none;border-color:;}
+ul#css3menu0 li:hover>a,ul#css3menu0 li a.pressed{
+	border-style:none;color:#FFFFFF;text-decoration:none;}
+ul#css3menu0 li.topmenu>a{
+	background-color:#8a8a8a;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;-o-transition:all 0.5s;}
+ul#css3menu0 li.topmenu:hover>a,ul#css3menu0 li.topmenu a.pressed{
+	background-color:#00557f;}
