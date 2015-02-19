@@ -1,8 +1,7 @@
-<!--
-<asp:Content ID="indexTitle" ContentPlaceHolderID="TitleContent" runat="server">
+<%--<asp:Content ID="indexTitle" ContentPlaceHolderID="TitleContent" runat="server">
     Home Page - My ASP.NET MVC Application
-</asp:Content>
-<!DOCTYPE html>-->
+</asp:Content>--%>
+<!DOCTYPE html>
 
 <html>
 <body>

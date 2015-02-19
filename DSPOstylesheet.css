@@ -1,0 +1,479 @@
+﻿ body,div,h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, dl, small {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+}
+
+html
+{
+font-family:arial;
+background:url(images/DSPOBackground4_MostSimilar-2.gif)no-repeat fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+<!-- for index2 -->
+#wrapper
+{
+   min-height: 100%; 
+}
+
+body
+{
+width: 75%;
+margin: 0 auto;
+
+}
+
+#head
+{
+margin:1% 0 1% 0;
+width:100%;
+float:left;
+height:150px;
+}
+#head .left
+{
+float:left;
+height:150px;
+width:65%;
+}
+#head a.logo
+{
+float:left;
+height:100%;
+margin-right:2%;
+}
+#head a.logo img
+{
+height:100%;
+}
+
+#head h1.left
+{
+float:none;
+display:table-cell;
+vertical-align:middle;
+font-weight:normal;
+color:#275078;
+font-size:1.8em;
+
+}
+#head .right
+{
+width:256px;
+height:100%;
+float:right;
+
+}
+#head a.crisis
+{
+width:100%;
+height:70%;
+float:right;
+}
+#head a.crisis img
+{
+width:100%;
+display:block;
+margin-left:auto;
+margin:auto;
+}
+#head a.chat
+{
+height:30%;
+width:100%;
+float:right;
+}
+#head a.chat img
+{
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+nav
+{
+width:100%;
+float:left;
+
+}
+
+#nav{
+    list-style:none;
+    float:left; 
+    width:100%;
+	
+}
+#nav li{
+    float:left;
+position:relative;
+	width:24.8%;
+	text-align:center;
+	padding:.1%;
+	
+}
+#nav a{
+    display:block;
+    color:#FFF;
+    background:#1E4E7C;
+    text-decoration:none;
+	font-size:1.3em;
+	padding:1em 0;
+	height:100%;
+}
+#nav a:hover{
+    color:#fff;
+    background:#0A7BC6;
+ 
+}
+
+/*--- DROPDOWN ---*/
+#nav ul{
+    background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+    list-style:none;
+	width:100%;
+    position:absolute;
+    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+	z-index:5;
+}
+#nav ul li{
+width:100%;
+border-top:1px solid white; /* Introducing a padding between the li and the a give the illusion spaced items */
+float:none;
+
+}
+#nav ul a{
+font-size:95%;
+   
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+left:0; /* Bring back on-screen when needed */
+
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+background:#0A7BC6;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+text-decoration:none;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+ background:#6E7F8F;
+}
+.left
+{
+width:26%;
+float:left;
+}
+#links 
+{
+float:left;
+width:100%;
+margin-top: 10px;
+}
+#links a
+{
+display:block;
+text-decoration:none;
+color:white;
+font-size:1.3em;
+background:#616161;
+padding:2% 1% 1% 3%;
+}
+#links a:hover
+{
+color:#FFF;
+background:#1E4E7C;
+}
+#links h2
+{
+background:white;
+color:#616161;
+font-size:1.2em;
+text-align:center;
+padding:1em;
+}
+#links > h2 > a
+{
+display:none;
+position:relative;
+padding:0 0;
+
+}
+#links li
+{
+position:relative;
+padding:.5% 0;
+}
+#links > ul
+{
+width:100%;
+
+}
+#nav > ul > li
+{
+width: 100%;
+float: left;
+}
+#links ul
+{
+list-style:none;
+}
+#links
+{
+padding-bottom: 10px;
+}
+
+
+#links li ul
+ {
+ display: none;
+position: absolute;
+top: 100%;
+}
+#nav li:hover ul
+{
+display: block;
+}
+
+.left img.fitness
+{
+    padding-top: 5%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.right
+{
+float:left;
+width:74%;
+}
+
+#slider
+{
+margin:1%;
+}
+#carousel h2
+{
+position:relative;
+text-align:center;
+font-size:1.3;
+margin-top:2%;
+} 
+
+
+#static
+{
+
+}
+.star {
+	background: url(img/SBPH/bg.png) repeat;
+	opacity: 0.8;
+	
+	margin: 10px;
+    border-style: inherit;
+}
+.star th {
+	background: url(img/SBHP/splash_logo.png) no-repeat right top;
+	opacity: 0.8;
+}
+.star p {
+	color: #000;
+	margin-left: 10px;
+	margin-right: 4px;
+	padding-bottom: 20px;
+	margin-bottom: 5px;
+}
+.original {
+	
+	background-color: #1e4e7c;
+	margin: 10px;
+	border-color: #000000;
+	border-style: double;
+}
+.original p
+{
+	color: #ffffff;
+	margin: 10px;
+	border-style: none;
+    padding: 20px;
+}
+.original a{
+    text-decoration: none;
+}
+
+#DLlink
+{
+    float:left;
+    margin:1%;
+    padding:5%;    
+}
+#DLlink a
+{
+    color: #275078;
+}
+#DLlink a:hover
+{    
+    color: red;
+}
+#DLlink p.title
+{
+    font-weight: 600;
+    padding-bottom: 10%;
+}
+
+
+#videosection
+{
+    max-width: 100%;
+    height: 300px;
+    background: #808080;
+    margin:1%;
+    padding:1%;
+}
+
+#maincontent
+{
+    float:left;
+    margin:1%;
+    padding:2%;
+    background: #ffffff;
+   /* opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+#maincontent h1 
+{
+    font-size: 1.5em;
+    font-weight:100;
+    text-transform: uppercase;
+    text-align:left;
+    margin-bottom:1%;
+    color: #00557F;
+}
+#maincontent h2, h3
+{
+   font-size: 1.1em;
+    font-weight:100;
+    text-transform: uppercase;
+    text-align:left;
+    margin-bottom:1%;
+    color: #00557F; 
+}
+
+#maincontent p
+{
+    font-weight: 100;
+    margin: 0px;
+}
+#maincontent a
+{
+    text-decoration: none;
+}
+#maincontent a:hover
+{
+    color: red;    
+}
+#maincontent ul li
+{
+    margin-left: 5%;
+}
+
+#who 
+{
+float:left;
+margin:1%;
+padding:5%;
+
+}
+
+#who h2, #mission h2, #vision h2
+{
+font-size: 1.5em;
+font-weight:100;
+text-align:center;
+margin-bottom:1%;
+color: #00557F;
+}
+#who p, #mission p, #vision p
+{
+font-weight: 100;
+margin: 0px;
+
+}
+
+#mission, #vision
+{
+float:left;
+width:43%;
+padding:2.5%;
+margin:1%;
+}
+
+footer
+{
+width:100%;
+float:left;
+padding-bottom: 50px;
+margin-top: 20px;
+}
+#footer
+{
+   text-align: center;
+   margin: 0 auto;
+   padding: 2% 0 2%;
+   bottom:0;
+   width:100%;
+   height:100%;   /* Height of the footer */
+   background: white;  
+}
+#footer p.Disclaimer:before
+{
+ content: "Disclaimer:The Defense Suicide Prevention Office is a policy office and does not provide crisis services.";
+}
+#footer p.Crisis:before
+{
+ color: red;
+ content: "If in crisis, click on the Military Crisis Line logo above for immediate assistance.";
+}
+#footer p.FooterLinks a
+{
+ font-variant: small-caps;
+ text-decoration: none;
+ color: #275078;
+}
+#footer p.FooterLinks a:hover
+{
+    font-weight: bold;
+}
+.Medallion
+{
+ margin: 0 auto;
+ border: none;
+ position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

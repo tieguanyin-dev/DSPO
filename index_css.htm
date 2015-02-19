@@ -34,6 +34,9 @@
 	<!-- for home page -->
 	<link rel="stylesheet" href="style.css" type="text/css">
 	
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+	
 	<!-- Start css3menu.com HEAD section --><!-- Real use of menu -->
 	<link rel="stylesheet" href="SuicideOutreach.htm_files/css3menu2/style.css" type="text/css"><style type="text/css">._css3m{display:none}</style>
 	<!-- End css3menu.com HEAD section -->
@@ -42,10 +45,10 @@
 	<link rel="stylesheet" href="SuicideOutreach.htm_files/css3menu3/style.css" type="text/css"><style type="text/css">._css3m{display:none}</style>
 	<!-- End css3menu.com HEAD section -->
 	
-		<!-- For Holiday -->
-	<script type="text/javascript" src="holiday/js/ThreeCanvas.js"></script>
-	<script type="text/javascript" src="holiday/js/Snow.js"></script>
-	<script>
+	<!-- For Holiday -->
+	<!--<script type="text/javascript" src="holiday/js/ThreeCanvas.js"></script>
+	<script type="text/javascript" src="holiday/js/Snow.js"></script>-->
+	<!--<script>
 
 			var SCREEN_WIDTH = window.innerWidth;
 			var SCREEN_HEIGHT = window.innerHeight;
@@ -165,31 +168,31 @@
 				
 			}
 
-		</script>
+		</script>-->
 		
-<style>
-	.holiday
-	{	
-		<!--border: 1em;
-		border-image: url("holiday/img/snowflake_red.png");-->
-		width: 1024px;
-		height: 168px;
-		border-color: #ffffff;
-		border-style: solid;
-		border-width: 11px 11px 11px 11px;
-		-moz-border-image: url(holiday/img/snowflake_red1.png) 114 107 111 106 repeat;
-		-webkit-border-image: url(holiday/img/snowflake_red1.png) 114 107 111 106 repeat;
-		-o-border-image: url(holiday/img/snowflake_red1.png) 114 107 111 106 repeat;
-		border-image: url(holiday/img/snowflake_red1.png) 114 107 111 106 fill repeat;
-	}
-</style>
+	<style>
+		.holiday
+		{	
+			<!--border: 1em;
+			border-image: url("holiday/img/snowflake_red.png");-->
+			width: 1024px;
+			height: 168px;
+			border-color: #ffffff;
+			border-style: solid;
+			border-width: 11px 11px 11px 11px;
+			-moz-border-image: url(holiday/img/snowflake_red1.png) 114 107 111 106 repeat;
+			-webkit-border-image: url(holiday/img/snowflake_red1.png) 114 107 111 106 repeat;
+			-o-border-image: url(holiday/img/snowflake_red1.png) 114 107 111 106 repeat;
+			border-image: url(holiday/img/snowflake_red1.png) 114 107 111 106 fill repeat;
+		}
+	</style>
 
 </head>
 
 <body onload="init()">
 
 <div id="wrap">
-	<div id="wrapHeader" class="holiday">
+	<div id="wrapHeader" class="">
 		<div class="logo">
 			<img src="images/DSPO-logo150px.gif" title="Defense Suicide Prevention Office" longdesc="" alt="DSPO seal"/>
 			<p>&nbsp; Defense Suicide Prevention Office</p>
@@ -251,10 +254,59 @@
 	</div><!-- END menu -->
 	
 	<div id="content" class="maincontent">
-	
 		
-				<h2>Partner's page</h2>
-			
+		<div id="carousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+								
+                                <div class="item active">
+									<img class="slide-image" src="images/800x300.gif" alt=""/>
+									<div class="carousel-caption">
+										<h2 style="color: #C60">2015 VA/DoD Suicide Prevention Conference</h2>
+										<p>Location:</span> National Conferencing, Inc. (NCI) - Hilton Anatole<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2201 N Stemmons Fwy, Dallas, TX 75207&nbsp;&nbsp;&nbsp;<a href="https://maps.google.com/maps?rlz=1C1CHWA_enUS605US606&es_sm=122&um=1&ie=UTF-8&q=Hilton+Anatole+Dallas&fb=1&gl=us&hq=Hilton+Anatole+Dallas&cid=9519092232309897186&sa=X&ei=_nuIVL_cJvTfsASQwIGABA&ved=0CEAQrwswAA" target="_blank"><img alt="google map icon" class="googleimg" border="0px" width="16px" height="30px" src="images/red.png"/></a></p>
+										<p><a class="btn btn-lg btn-primary" href="#" role="button">Click to learn more...</a></p>
+										<!--<p>Save-the-Date - 2015 VA/DoD Suicide Prevention Conference, 27-29 Jan 2015</p>
+										<p>Location:  Top Priority is Dallas, TX - Official guidance will be provided by VA<br/>Audience: The primary target audience for this conference is caregivers, clinicians (e.g., psychologists, social workers, physicians, nurses, counselors), researchers, suicide prevention and postvention specialists and military operational leaders. Service members, Veterans, and their families with interest and involvement in suicide prevention may also benefit.</p>-->
+										
+									</div>
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="images/800x300.gif" alt=""/>
+									<div class="container">
+										<div class="carousel-caption">
+										<h2>Vets4Warriors</h2>
+										<!--<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>-->
+										<p>Vets4Warriors is a confidential, Peer-to-Peer support network and call center for Active Duty, National Guard and Reserve Service members and their families. Available 24/7, Veteran Peers connect Service members and their families to the resources and support they need to achieve their goals, manage stress, and build resilience.<br/><br/>
+										Visit the Vets4Warriors website, connect through email, or call toll free at 855-838-8255. Live online chat service is also available.</p>
+										<p><a class="btn btn-lg btn-primary" href="#" role="button">Click here to Vets4Warriors</a></p>
+										</div>
+									</div>
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="images/800x300.gif" alt=""/>
+									<div class="container">
+										<div class="carousel-caption">
+											<h2></h2>
+											<p>The Defense Suicide Prevention Office is partnering with Star Behavioral Health Services to offer a number of training opportunities in several cities throughout 2015. Please click here to download a PDF of cities and dates or visit <a href="#">http://www.starproviders.org/</a></p>
+											<p><a class="btn btn-lg btn-primary" href="#" role="button">see more</a></p>
+										</div>
+									</div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                    </div>
+	
+	<iframe src="//fast.wistia.net/embed/playlists/3xn3befuxg?media_0_0%5BautoPlay%5D=false&media_0_0%5BcontrolsVisibleOnLoad%5D=false&theme=bento&version=v1&videoOptions%5BautoPlay%5D=true&videoOptions%5BvideoHeight%5D=289&videoOptions%5BvideoWidth%5D=380&videoOptions%5BvolumeControl%5D=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_playlist" name="wistia_playlist" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="687" height="327"></iframe>
+				
 	<!-- side links -->	
 	<div class="programlinks">
 		<p>Suicide Prevention Program Links</p>
