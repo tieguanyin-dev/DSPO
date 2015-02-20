@@ -1,288 +1,346 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
-<!-- #BeginTemplate "../SuicideOutreach.dwt" -->
+
 <head>
-<meta http-equiv="Content-Language" content="en-us">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<!-- #BeginEditable "metadata" -->
-<title>Risk Factors</title>
-<meta name="keywords" content="risk, factors, circumstances, experiences, suicide, negative life events, self-harm, crisis, suicide attempts, family history of suicide, behavior, violence, hostility, sexual abuse, phychiatric illness, mental disorder, substance abuse, chronic physical illness, chronic pain, loss of health, divorce, humiliation, failure, depression, coping skills, social pressures, loff of job, military life, drug and alcohol abuse, relationship problems, financial problems, legal problems">
-<meta name="description" content="&quot;Risk factors&quot; refers to an individual's characteristics, circumstances, history and experiences that raise the risk for suicide. ">
-<!-- #EndEditable --><!-- #BeginEditable "doctitle" -->
-<title>Defense Suicide Prevention Office</title>
-<!-- #EndEditable -->
-<style fprolloverstyle>
-A:hover {
-	color: red;
-	font-weight: bold
-}
-</style>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
 
-<!-- Start css3menu.com HEAD section --><!-- Real use of menu -->
-<link rel="stylesheet" href="../SuicideOutreach.htm_files/css3menu2/style.css" type="text/css">
-<style type="text/css">
-._css3m {
-	display: none
-}
-</style>
-<!-- End css3menu.com HEAD section -->
+    <title>Risk Factors</title>
 
-<!-- Start css3menu.com HEAD section --><!-- Real use of leftside menu -->
-<link rel="stylesheet" href="../SuicideOutreach.htm_files/css3menu3/style.css" type="text/css">
-<style type="text/css">
-._css3m {
-	display: none
-}
-</style>
-<!-- End css3menu.com HEAD section -->
+    <meta name="description" content="&quot;Risk factors&quot; refers to an individual's characteristics, circumstances, history and experiences that raise the risk for suicide. ">
 
-<script language=JavaScript>
-<!--
+    <link rel="stylesheet" type="text/css" href="../DSPOstylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../DSPOstylesheet_mobile.css">
 
-//Disable right click script III- By Renigade (renigade@mediaone.net)
-//For full source code, visit http://www.dynamicdrive.com
 
-var message="";
-///////////////////////////////////
-function clickIE() {if (document.all) {(message);return false;}}
-function clickNS(e) {if 
-(document.layers||(document.getElementById&&!document.all)) {
-if (e.which==2||e.which==3) {(message);return false;}}}
-if (document.layers) 
-{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
-else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+    <script language=JavaScript>
+        //<!--
+        //Disable right click script III- By Renigade (renigade@mediaone.net)
+        //For full source code, visit http://www.dynamicdrive.com
 
-document.oncontextmenu=new Function("return false")
-// --> 
-</script>
+        var message = "";
+        ///////////////////////////////////
+        function clickIE() { if (document.all) { (message); return false; } }
+        function clickNS(e) {
+            if (document.layers || (document.getElementById && !document.all)) {
+                if (e.which == 2 || e.which == 3) { (message); return false; }
+            }
+        }
+        if (document.layers) { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = clickNS; }
+        else { document.onmouseup = clickNS; document.oncontextmenu = clickIE; }
+        document.oncontextmenu = new Function("return false")
+        // -->
+    </script>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-  ga('create', 'UA-52620405-1', 'auto');
-  ga('send', 'pageview');
+    <!--<script>
+        $(document).ready(function() {
 
-</script>
+            /* If mobile browser, prevent click on parent nav item from redirecting to URL */
+            if(is_touch_device()) {
+                //$('#mainmenu > li > a').attr('href' ,'#');
+                $('#nav li > ul').each(function (index, domEle) {
+                /* Method 1: Use this to modify the href on the <a> to # */
+                //$(domEle).prev('a').attr('href' ,'#');
+
+                /* Method 2: Use this to keep the href on the <a> intact but prevent the default action */
+                $(domEle).prev('a').click(function(event) {
+                event.preventDefault();
+                });
+            });
+        }
+
+        });
+
+        //check is this a mobile browser
+        function is_touch_device() {
+        return !!('ontouchstart' in window);
+        }
+    </script><-->
+
+
+    <script>
+        ; (function ($, window, document, undefined) {
+            $.fn.doubleTapToGo = function (params) {
+                if (!('ontouchstart' in window) &&
+                    !navigator.msMaxTouchPoints &&
+                    !navigator.userAgent.toLowerCase().match(/windows phone os 7/i)) return false;
+
+                this.each(function () {
+                    var curItem = false;
+
+                    $(this).on('click', function (e) {
+                        var item = $(this);
+                        if (item[0] != curItem[0]) {
+                            e.preventDefault();
+                            curItem = item;
+                        }
+                    });
+
+                    $(document).on('click touchstart MSPointerDown', function (e) {
+                        var resetItem = true,
+                            parents = $(e.target).parents();
+
+                        for (var i = 0; i < parents.length; i++)
+                            if (parents[i] == curItem[0])
+                                resetItem = false;
+
+                        if (resetItem)
+                            curItem = false;
+                    });
+                });
+                return this;
+            };
+        })(jQuery, window, document);
+    </script>
+
+    <script>
+        $(function () {
+            $('#nav li:has(ul)').doubleTapToGo();
+        });
+    </script>
+
+    <!-- GA script -->
+    <script type="text/javascript" src="../bootstrap/js/4analytics.js"></script>
+
 </head>
 
-<body background="../images/DSPOBackground4_MostSimilar-2.gif">
-<div align="center">
-  <table border="0" width="1024" cellspacing="1" bordercolor="#FFFFFF">
-    <tr>
-      <td width="754" align="left" height="154"><font size="5" face="Arial" color="#275078"> <img border="0" src="../images/DSPO-logo150px.gif" width="150" height="150" align="left" title="Defense Suicide Prevention Office" longdesc="../Defense Suicide Prevention Office official seal" alt="DSPO seal"></font>
-        <p>&nbsp; </p>
-        <p><font face="Arial" color="#275078" style="font-size: 20pt">&nbsp; 
-          Defense Suicide Prevention Office</font></td>
-      <td width="263" valign="top" height="154"><a href="http://www.veteranscrisisline.net/MilitaryChatTermsOfService.aspx?account=Military Chat" target="_blank" onClick="ga('send', 'event', { eventCategory: 'Risk Factors Page', eventAction: 'MCL Click', eventLabel: 'MCL Link'});"> <img border="0" src="../images/Military_Crisis_Line.GIF" width="256" height="89" align="left" lowsrc="../MCL%20logo" title="Call 1-800-273-8255 and press 1 for the Military Crisis Line"  alt="Military Crisis Line Logo"></a>
-        <p align="center"> &nbsp;
-        
-        <p align="center"> <br>
-          &nbsp;
-        
-        <p align="center"> <a href="http://www.veteranscrisisline.net/MilitaryChatTermsOfService.aspx?account=Military Chat" target="_blank" onClick="ga('send', 'event', { eventCategory: 'Risk Factors Page', eventAction: 'MCL Click', eventLabel: 'MCL Red Link'});"> <img border="0" src="../images/Confidential_chat2.png" width="166" height="37" title="confidential chat" longdesc="../Confidential Chat graphic" alt="Confidential Chat graphic"></a></td>
-    </tr>
-  </table>
-  <table border="0" width="1005" cellspacing="1" bordercolor="#FFFFFF">
-    <tr>
-      <td align="left" bgcolor="#00557F"><div align="left">
-          <table border="0" width="99%">
-            <tr>
-              <td width="106">&nbsp;</td>
-              <td>&nbsp;<!-- Start css3menu.com BODY section -->
-                
-                <ul id="css3menu2" class="topmenu">
-                  <li class="topfirst"><a href="../index.htm" style="width:173px;height:24px;line-height:24px;">Home</a></li>
-                  <li class="topmenu"><a href="../about_suicide.htm" style="width:172px;height:24px;line-height:24px;"><span>About Suicide</span></a>
-                    <ul>
-                      <li><a href="../AboutSuicide/risk_factors.htm" target="_parent">Risk Factors</a></li>
-                      <li><a href="../AboutSuicide/protective_factors.htm" target="_parent">Protective Factors</a></li>
-                      <li><a href="../AboutSuicide/warning_signs.htm" target="_parent">Warning Signs</a></li>
-                      <li><a href="../AboutSuicide/coping.htm" target="_parent">Coping</a></li>
-                      <li><a href="../AboutSuicide/family_friends.htm" target="_parent">Family &amp; Friends</a></li>
-                      <li><a href="../AboutSuicide/servicemembers_veterans.htm" target="_parent">Service Members &amp; Veterans</a></li>
-                    </ul>
-                  </li>
-                  <li class="topmenu"><a href="../suicide_data.htm" style="width:172px;height:24px;line-height:24px;"><span>Suicide Data</span></a>
-                    <ul>
-                      <li><a href="../SuicideData/DoDSER_Reports.htm" target="_parent">DoDSER Annual Reports </a></li>
-                      <li><a href="../SuicideData/quarterly_reports.htm" target="_parent">Quarterly Reports</a></li>
-                      <li><a href="../SuicideData/standardized_data.htm" target="_parent">Standardized Data and Reporting</a></li>
-                    </ul>
-                  </li>
-                  <li class="toplast"><a href="#" target="_top" style="width:173px;height:24px;line-height:24px;"><span>Resources</span></a>
-                    <ul>
-                      <li><a href="../Resources/guides_reports.htm" target="_parent">Guides and Reports</a></li>
-                      <li><a href="../Resources/policy.htm">Policy</a></li>
-                      <li><a href="../Resources/crisis_line.htm" target="_parent">Military Crisis Line</a></li>
-                      <li><a href="../Resources/vets4warriors.htm" target="_parent">Vets4Warriors</a></li>
-                      <li><a href="../Resources/PSAs.htm" target="_parent">PSAs</a></li>
-                      <li><a href="../Resources/news_archives.htm" target="_parent">News &amp; Events Archives</a></li>
-                      <li><a href="../Resources/DoD_links.htm" target="_parent">DoD Links</a></li>
-                      <li><a href="../Resources/external_links.htm" target="_parent">External Links</a></li>
-                      <li><a href="../Resources/star_behavioral_health.htm" target="_parent">Star Behavioral Health Program</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                
-                <!-- End css3menu.com BODY section --></td>
-            </tr>
-          </table>
-        </div></td>
-    </tr>
-  </table>
-  <div align="center">
-    <table border="0" width="1009" cellpadding="6" style="border-collapse: collapse" cellspacing="6">
-      <tr>
-        <td width="242" align="center" height="100%" valign="top"><div align="center">
-            <table border="0" width="234" cellspacing="5" cellpadding="5" height="413" style="border-collapse: collapse">
-              <tr>
-                <td valign="top" width="233" height="62" bgcolor="#FFFFFF"><p align="center"> <font color="#616161" face="Arial" size="4"> Suicide Prevention<br>
-                    Program Links<br>
-                    &nbsp;</font><!-- Start css3menu.com BODY section -->
-                  
-                  <ul id="css3menu3" class="topmenu">
-                    <li class="topmenu"><a href="http://www.armyg1.army.mil/hr/suicide/" target="_blank" style="width:206px;height:26px;line-height:26px;">Army</a></li>
-                    <li class="topmenu"><a href="http://www.public.navy.mil/BUPERS-NPC/support/21st_century_sailor/suicide_prevention/Pages/default.aspx" target="_blank" style="width:206px;height:26px;line-height:26px;">Navy</a></li>
-                    <li class="topmenu"><a href="http://www.afms.af.mil/suicideprevention/index.asp" target="_blank" style="width:206px;height:26px;line-height:26px;">Air Force</a></li>
-                    <li class="topmenu"><a href="http://www.med.navy.mil/sites/nmcphc/health-promotion/psychological-emotional-wellbeing/Pages/suicide-prevention.aspx" target="_top" style="width:206px;height:26px;line-height:26px;">Marines</a></li>
-                    <li class="topmenu"><a href="http://www.uscg.mil/worklife/suicide_prevention.asp" target="_blank" style="width:206px;height:26px;line-height:26px;">Coast Guard</a></li>
-                    <li class="topmenu"><a href="http://www.mentalhealth.va.gov/suicide_prevention/" target="_blank" style="width:206px;height:26px;line-height:26px;">Dept of Veteran Affairs</a></li>
-                    <li class="topmenu"><a href="https://www.jointservicessupport.org/PHP/Default.aspx" target="_blank" style="width:206px;height:27px;line-height:27px;">National Guard</a></li>
-                    <li class="topmenu"><a href="http://www.usar.army.mil/resources/ForSoldiers/Pages/Suicide-prevention-is-everyone%27s-business.aspx" target="_blank" style="width:206px;height:26px;line-height:26px;">Army Reserve</a></li>
-                    <li class="topmenu"><a href="http://www.vets4warriors.com/" target="_blank" style="width:206px;height:27px;line-height:27px;" onClick="ga('send', 'event', { eventCategory: 'Risk Factors Page', eventAction: 'Vets4Warriors Click', eventLabel: 'V4W side Link'});">Vets4Warriors</a></li>
-                    <li class="topmenu"><a href="https://www.ebenefits.va.gov/ebenefits-portal/ebenefits.portal" style="width:206px;height:26px;line-height:26px;">eBenefits</a></li>
-                  </ul>
-                  
-                  <!-- End css3menu.com BODY section --></td>
-              </tr>
-              <tr>
-                <td valign="top" width="233"><!-- End css3menu.com BODY section --> 
-                  <!-- End css3menu.com BODY section --></td>
-              </tr>
-            </table>
-          </div>
-            <p align="center"> <img src="../images/Total%20Force%20Fitness%2015%20x%2015_rs.png" width="241" height="233" title="Total Force Fitness" longdesc="Total Force Fitness Image" alt="Total Force Fitness Image" /></p>
-            <!-- added 11 Feb 2015 -->
-            <div class="hover-red">
-				<p style="text-transform: uppercase; float: left;">Download Link</p>
-				<p style="position: absolute; float: left; margin-top: 40px;"><a style="text-decoration: none;" href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank">Adobe Reader</a></p>
-				<p style="position: absolute; float: left; margin-top: 60px;"><a style="text-decoration: none;" href="http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac">MS Word Viewer</a></p>
-			</div>
-            <!-- end of add -->
-			</td>
-        <td width="766" valign="top"><!-- #BeginEditable "content" -->
-          <div id="dnn_ctr478_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
-            <div id="dnn_ctr478_HtmlModule_lblContent" class="Normal">
-              <div class="white-content-box">
-                <table border="0" width="100%" cellspacing="5" cellpadding="5" bgcolor="#FFFFFF">
-                  <tr>
-                    <td><div id="dnn_ctr478_ModuleContent0" class="DNNModuleContent ModDNNHTMLC">
-                        <div id="dnn_ctr478_HtmlModule_lblContent0" class="Normal">
-                          <div class="white-content-box"> <span style="text-transform:uppercase"> <font size="5" face="Arial" color="#00557F">Risk 
-                            Factors</font></span>
-                            <p><font face="Arial"><span class="lh-10"> &quot;Risk factors&quot; refers to an individual's characteristics, 
-                              circumstances, history and experiences that raise the 
-                              risk for suicide.</span> </font> </p>
-                            <p><font face="Arial"><font color="#275078"><span class="uppercase-underline">HOW TO READ THE 
-                              'NEGATIVE LIFE EVENTS THAT INCREASE SUICIDE RISK' LIST:</span></font><span class="lh-10"><font color="#275078"> </font>Having experienced any one (or even several) of the 
-                              items listed in the Negative Life Events list does not 
-                              necessarily mean that a person is suicidal or 
-                              contemplating self-harm. However, these negative 
-                              experiences do increase the risk of suicidal behavior 
-                              when compared with individuals who have not experienced 
-                              such events.</span> </font> </p>
-                            <p><font face="Arial"><font color="#275078"><span class="uppercase-underline">INCREASED 
-                              DISPOSITION TO ENGAGE IN SELF-HARM:</span></font><span class="lh-10"> When compared with individuals who have not experienced 
-                              these events, the occurrence of an immediate 
-                              &quot;precipitating event&quot; such as a personal crisis may 
-                              increase the suicide risk for people who have previously 
-                              encountered the life events noted in the Negative Life 
-                              Events list.</span> </font> </p>
-                            <p><font face="Arial" color="#275078"><span class="uppercase-underline">NEGATIVE LIFE EVENTS 
-                              THAT INCREASE SUICIDE RISK:</span> </font> </p>
-                            <ul>
-                              <li><font face="Arial">History of one or more prior suicide attempts.</font></li>
-                              <li><font face="Arial">Family history of suicide.</font></li>
-                              <li><font face="Arial">Exposure to the suicidal behavior of others.</font></li>
-                              <li><font face="Arial">History of violence or hostility.</font></li>
-                              <li><font face="Arial">History of family violence.</font></li>
-                              <li><font face="Arial">History of physical or sexual abuse.</font></li>
-                              <li><font face="Arial">Psychiatric illness.</font></li>
-                              <li><font face="Arial">Family history of mental disorder or substance 
-                                abuse.</font></li>
-                              <li><font face="Arial">Chronic physical illness, including chronic 
-                                pain.</font></li>
-                              <li><font face="Arial">Loss of health (real or imaginary).</font></li>
-                              <li><font face="Arial">Recent, severe loss (especially a marriage or 
-                                relationship), or threat of significant loss.</font></li>
-                              <li><font face="Arial">Being faced with a situation of humiliation or 
-                                failure.</font></li>
-                              <li><font face="Arial">Recent or impending incarceration.</font></li>
-                              <li><font face="Arial">Difficult times: holidays, anniversaries, and 
-                                the first week after discharge from a hospital; just 
-                                before and after diagnosis of a major illness; just 
-                                before and during disciplinary proceedings.</font></li>
-                              <li><font face="Arial">Assignment or placement into a new and/or 
-                                unfamiliar environment.</font></li>
-                              <li><font face="Arial">Difficulty adjusting to new demands and 
-                                different workloads.</font></li>
-                              <li><font face="Arial">Lack of adequate social and coping skills.</font></li>
-                              <li><font face="Arial">Academic, occupational, or social pressures.</font></li>
-                              <li><font face="Arial">Loss of job, home, money, status, self-esteem, 
-                                personal security.</font></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <font face="Arial" color="#275078"> <span class="uppercase-underline">OTHER RISK FACTORS 
-                      RELEVANT TO MILITARY LIFE: </span> </font>
-                      <ul>
-                        <li><font face="Arial">Male gender.</font></li>
-                        <li><font face="Arial">Caucasian race.</font></li>
-                        <li><font face="Arial">E-1 to E-2 rank.</font></li>
-                        <li><font face="Arial">Younger than 25 years of age.</font></li>
-                        <li><font face="Arial">GED/less than high-school education.</font></li>
-                        <li><font face="Arial">Divorce or recent relationship failure.</font></li>
-                        <li><font face="Arial">Regular component.</font></li>
-                        <li><font face="Arial">Drug and Alcohol Abuse.</font></li>
-                        <li><font face="Arial">Relationship Problems.</font></li>
-                        <li><font face="Arial">Legal, administrative, and financial problems.</font></li>
-                      </ul></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-          &nbsp;&nbsp;<!-- #EndEditable --></td>
-      </tr>
-      <tr>
-        <td colspan="2"><!-- #BeginEditable "additional%20content" -->&nbsp;<!-- #EndEditable --></td>
-      </tr>
-    </table>
-  </div>
-  <table border="0" width="100%" bgcolor="#F0F0F0">
-    <tr>
-      <td><div class="disclaimer">
-          <p align="center"><font face="Arial" size="2"><strong>Disclaimer:</strong>The Defense 
-            Suicide Prevention Office is a policy office and does not 
-            provide crisis services. <br>
-            <b><font color="#FF0000"> <span class="bold-red">If in crisis, 
-            click on the &quot;Military Crisis Line&quot; logo above for immediate 
-            assistance.</span> </font></b></font></p>
+<body>
+    <div id="head">
+        <div class="right">
+            <a class="crisis" target="_blank" href="http://www.veteranscrisisline.net/MilitaryChatTermsOfService.aspx?account=Military" onclick="ga('send', 'event', { eventCategory: 'Protective Factors Page', eventAction: 'MCL Click', eventLabel: 'MCL Link'});">
+                <img src="../images/Military_Crisis_Line.GIF" title="Military Crisis Line" alt="crisis line">
+            </a>
+            <a class="chat" target="_blank" href="http://www.veteranscrisisline.net/MilitaryChatTermsOfService.aspx?account=Military" onclick="ga('send', 'event', { eventCategory: 'Protective Factors Page', eventAction: 'MCL Click', eventLabel: 'MCL Red Link' });">
+                <img src="../images/Confidential_chat2.png" title="Confidential Chat" alt="chat">
+            </a>
         </div>
-        <p align="center"><font size="2" color="#275078" face="Arial"> <span style="font-variant: small-caps"> <a style="font-variant: small-caps; text-decoration: none; color: #275078" href="../about_us.htm">About</a>&nbsp; |&nbsp; <a style="font-variant: small-caps; text-decoration: none; color: #275078" href="../PrivacyPolicy.htm">Privacy&nbsp;</a> |&nbsp; <a style="color: #275078; font-variant: small-caps; text-decoration: none" href="../Terms_of_Use.htm">Terms of 
-          Use</a></span></font><br>
-          <br>
-          &nbsp; <img border="0" src="../images/DoD_Seal-90px.gif" width="90" height="90" title="Department of Defense" longdesc="../Department of Defense official seal" alt="DoD Seal"><img border="0" src="../images/VA-Seal-90px.gif" width="90" height="90" title="Veteran's Administration" longdesc="../Veteran's Administration official seal" alt="VA seal"><img border="0" src="../images/ArmySeal-90px.gif" width="90" height="90" title="United States Army" longdesc="../US Army official seal" alt="Army Seal"><img border="0" src="../images/Military-Health-System-Seal-90px.gif" width="90" height="90" title="US Military Health Systems" longdesc="../Military Health Systems official seal" alt="Military Health Systems seal"><img border="0" src="../images/AirForceSeal-90px.gif" width="90" height="90" title="United States Air Force" longdesc="../Official US Airforce seal" alt="Air Force Seal"><img border="0" src="../images/NationalGuardSeal90px.gif" width="90" height="90" title="United States National Guard" longdesc="../Official US National Guard seal" alt="National Guard seal"><img border="0" src="../images/USnavy-90px.gif" width="90" height="89" title="United States Navy" longdesc="../Official US Navy seal" alt="Navy Seal"><img border="0" src="../images/Marines_Seal-90px.gif" width="90" height="90" title="United States Marine Corps" longdesc="../Official US Marine Corps seal" alt="USMC seal">
-        
-        <p>&nbsp;</td>
-    </tr>
-  </table>
-</div>
-<p align="center">&nbsp;</p>
+        <div class="left">
+            <a class="logo" href="index.html">
+                <img src="../images/DSPO-logo150px.gif" title="Defense Suicide Prevention Office" alt="DSPOlogo">
+            </a>
+            <h1 class="left">Defense Suicide Prevention Office</h1>
+        </div>
+
+    </div>
+    <nav>
+        <ul id="nav">
+            <li>
+                <a href="../index.htm">Home</a>
+            </li>
+
+            <li>
+                <a href="../about_suicide.htm">About Suicide</a>
+
+                <ul>
+                    <li><a href="../AboutSuicide/risk_factors.htm" target="_parent">Risk Factors</a></li>
+                    <li><a href="../AboutSuicide/protective_factors.htm" target="_parent">Protective Factors</a></li>
+                    <li><a href="../AboutSuicide/warning_signs.htm" target="_parent">Warning Signs</a></li>
+                    <li><a href="../AboutSuicide/coping.htm" target="_parent">Coping</a></li>
+                    <li><a href="../AboutSuicide/family_friends.htm" target="_parent">Family &amp; Friends</a></li>
+                    <li><a href="../AboutSuicide/servicemembers_veterans.htm" target="_parent">Service Members &amp; Veterans</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../suicide_data.htm">Suicide Data</a>
+                <ul>
+                    <li><a href="../SuicideData/DoDSER_Reports.htm" target="_parent">DoDSER Annual Reports </a></li>
+                    <li><a href="../SuicideData/quarterly_reports.htm" target="_parent">Quarterly Reports</a></li>
+                    <li><a href="../SuicideData/standardized_data.htm" target="_parent">Standardized Data and Reporting</a></li>
+                </ul>
+
+            </li>
+            <li>
+                <a href="#">Resources</a>
+                <ul>
+                    <li><a href="../Resources/guides_reports.htm" target="_parent">Guides and Reports</a></li>
+                    <li><a href="../Resources/policy.htm">Policy</a></li>
+                    <li><a href="../Resources/crisis_line.htm" target="_parent">Military Crisis Line</a></li>
+                    <li><a href="../Resources/vets4warriors.htm" target="_parent">Vets4Warriors</a></li>
+                    <li><a href="../Resources/PSAs.htm" target="_parent">PSAs</a></li>
+                    <li><a href="../Resources/news_archives.htm" target="_parent">News &amp; Events Archives</a></li>
+                    <li><a href="../Resources/DoD_links.htm" target="_parent">DoD Links</a></li>
+                    <li><a href="../Resources/external_links.htm" target="_parent">External Links</a></li>
+                    <li><a href="../Resources/star_behavioral_health.htm" target="_parent">Star Behavioral Health Program</a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="left">
+        <div id="links">
+            <h2>
+                Suicide Prevention Program Links
+                <a href="#links" title="Show Links">Show Links</a>
+                <a href="#" title="Hide Links">Hide Links</a>
+            </h2>
+
+            <ul>
+                <li><a href="http://www.armyg1.army.mil/hr/suicide/" target="_blank">Army</a></li>
+                <li><a href="http://www.public.navy.mil/BUPERS-NPC/support/21st_century_sailor/suicide_prevention/Pages/default.aspx" target="_blank">Navy</a></li>
+                <li><a href="http://www.airforcemedicine.af.mil/" target="_blank">Air Force</a></li>
+                <li><a href="http://www.med.navy.mil/sites/nmcphc/health-promotion/psychological-emotional-wellbeing/Pages/suicide-prevention.aspx" target="_blank">Marines</a></li>
+                <li><a href="http://www.uscg.mil/worklife/suicide_prevention.asp" target="_blank">Coast Guard</a></li>
+                <li><a href="http://www.mentalhealth.va.gov/suicide_prevention/" target="_blank">Dept of Veteran Affairs</a></li>
+                <li><a href="https://www.jointservicessupport.org/PHP/Default.aspx" target="_blank">National Guard</a></li>
+                <li><a href="http://www.usar.army.mil/resources/ForSoldiers/Pages/Suicide-prevention-is-everyone%27s-business.aspx" target="_blank">Army Reserve</a></li>
+                <li><a href="http://www.vets4warriors.com/" target="_blank" onclick="ga('send', 'event', { eventCategory: 'Protective Factors Page', eventAction: 'V4W Click', eventLabel: 'V4W side Link' });">Vets4Warriors</a></li>
+                <li><a href="https://www.ebenefits.va.gov/ebenefits/homepage" target="_blank">eBenefits</a></li>
+            </ul>
+            <img class="fitness" src="../images/Total%20Force%20Fitness%2015%20x%2015_rs.png" alt="Total Force Fitness Image" />
+        </div>
+
+        <!-- added 11 Feb 2015 -->
+        <div id="DLlink">
+            <p class="title">Download Link</p>
+            <p><a style="text-decoration: none;" href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank">Adobe Reader</a></p>
+            <p><a style="text-decoration: none;" href="http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac">MS Word Viewer</a></p>
+        </div>
+        <!-- end of add -->
+    </div>
+
+    <!-- main content-->
+    <div class="right">
+        <div id="maincontent">
+            <h1>Risk Factors</h1>
+            <br />
+            <p>
+                &quot;Risk factors&quot; refers to an individual's characteristics,
+                circumstances, history and experiences that raise the
+                risk for suicide.
+
+            </p>
+            <br />
+            <h2>HOW TO READ THE 'NEGATIVE LIFE EVENTS THAT INCREASE SUICIDE RISK' LIST:</h2>
+            <p>
+                Having experienced any one (or even several) of the
+                items listed in the Negative Life Events list does not
+                necessarily mean that a person is suicidal or
+                contemplating self-harm. However, these negative
+                experiences do increase the risk of suicidal behavior
+                when compared with individuals who have not experienced
+                such events.
+            </p>
+            <br /><br />
+            <h2>INCREASED DISPOSITION TO ENGAGE IN SELF-HARM:</h2>
+            <p>
+                When compared with individuals who have not experienced
+                these events, the occurrence of an immediate
+                &quot;precipitating event&quot; such as a personal crisis may
+                increase the suicide risk for people who have previously
+                encountered the life events noted in the Negative Life
+                Events list.
+            </p>
+            <br /><br />
+            <h2>NEGATIVE LIFE EVENTS THAT INCREASE SUICIDE RISK:</h2>
+            <ul>
+                <li><p>History of one or more prior suicide attempts.</p></li>
+                <li><p>Family history of suicide.</p></li>
+                <li><p>Exposure to the suicidal behavior of others.</p></li>
+                <li><p>History of violence or hostility.</p></li>
+                <li><p>History of family violence.</p></li>
+                <li><p>History of physical or sexual abuse.</p></li>
+                <li><p>Psychiatric illness.</p></li>
+                <li>
+                    <p>
+                        Family history of mental disorder or substance
+                        abuse.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Chronic physical illness, including chronic
+                        pain.
+                    </p>
+                </li>
+                <li><p>Loss of health (real or imaginary).</p></li>
+                <li>
+                    <p>
+                        Recent, severe loss (especially a marriage or
+                        relationship), or threat of significant loss.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Being faced with a situation of humiliation or
+                        failure.
+                    </p>
+                </li>
+                <li><p>Recent or impending incarceration.</p></li>
+                <li>
+                    <p>
+                        Difficult times: holidays, anniversaries, and
+                        the first week after discharge from a hospital; just
+                        before and after diagnosis of a major illness; just
+                        before and during disciplinary proceedings.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Assignment or placement into a new and/or
+                        unfamiliar environment.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Difficulty adjusting to new demands and
+                        different workloads.
+                    </p>
+                </li>
+                <li><p>Lack of adequate social and coping skills.</p></li>
+                <li><p>Academic, occupational, or social pressures.</p></li>
+                <li>
+                    <p>
+                        Loss of job, home, money, status, self-esteem,
+                        personal security.
+                    </p>
+                </li>
+            </ul>
+            <br />
+            <h2>OTHER RISK FACTORS RELEVANT TO MILITARY LIFE:</h2>
+            <ul>
+                <li><p>Male gender.</p></li>
+                <li><p>Caucasian race.</p></li>
+                <li><p>E-1 to E-2 rank.</p></li>
+                <li><p>Younger than 25 years of age.</p></li>
+                <li><p>GED/less than high-school education.</p></li>
+                <li><p>Divorce or recent relationship failure.</p></li>
+                <li><p>Regular component.</p></li>
+                <li><p>Drug and Alcohol Abuse.</p></li>
+                <li><p>Relationship Problems.</p></li>
+                <li><p>Legal, administrative, and financial problems.</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div id="footer">
+            <p class="Disclaimer"></p>
+            <p class="Crisis"></p>
+            <br />
+            <p class="FooterLinks">
+                <a href="../About_Us.htm">About</a>&nbsp; |&nbsp;
+                <a href="../PrivacyPolicy.htm">Privacy&nbsp;</a> |&nbsp;
+                <a href="../Terms_of_Use.htm">Terms of Use</a>
+            </p>
+            <br />
+            <br />
+            <div class="Medallion">
+                <img src="../images/DoD_Seal-90px.gif" title="Department of Defense" longdesc="Department of Defense official seal" alt="DoD Seal" />
+                <img src="../images/VA-Seal-90px.gif" title="Veteran's Administration" longdesc="Veteran's Administration official seal" alt="VA seal" />
+                <img src="../images/ArmySeal-90px.gif" title="United States Army" longdesc="US Army official seal" alt="Army Seal" />
+                <img src="../images/Military-Health-System-Seal-90px.gif" title="US Military Health Systems" longdesc="Military Health Systems official seal" alt="Military Health Systems seal" />
+                <img src="../images/AirForceSeal-90px.gif" title="United States Air Force" longdesc="Official US Airforce seal" alt="Air Force Seal" />
+                <img src="../images/NationalGuardSeal90px.gif" title="United States National Guard" longdesc="Official US National Guard seal" alt="National Guard seal" />
+                <img src="../images/USnavy-90px.gif" title="United States Navy" longdesc="Official US Navy seal" alt="Navy Seal" />
+                <img src="../images/Marines_Seal-90px.gif" title="United States Marine Corps" longdesc="Official US Marine Corps seal" alt="USMC seal" />
+            </div>
+
+        </div>
+    </footer>
 </body>
-<!-- #EndTemplate -->
+
 </html>
