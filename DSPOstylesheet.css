@@ -523,7 +523,13 @@ img.googleimg
 @media only screen and (min-width : 1224px) {
     /* Styles */
 
-    a img.DoD-icon {
+    a img.Data-icon {
+        width: 250px;
+        height: 100%;
+        border-width: thin;
+        border-style:groove;
+    }
+     a img.DoD-icon {
         width: 250px;
         height: 100%;
     }
