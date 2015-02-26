@@ -525,13 +525,13 @@ img.googleimg
 
     a img.Data-icon {
         width: 250px;
-        height: 100%;
+        max-height: 320px;
         border-width: thin;
         border-style:groove;
     }
      a img.DoD-icon {
         width: 250px;
-        height: 100%;
+        max-height: 320px;
     }
 }
 /* iPads (landscape) ----------- */
