@@ -1,4 +1,4 @@
-body, div, h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, dl, small {
+﻿body, div, h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, dl, small {
     margin: 0;
     padding: 0;
     border: 0;
@@ -247,7 +247,7 @@ nav {
 #carousel h2 {
     position: relative;
     text-align: center;
-    font-size: 1.3;
+    font-size: 1.3em;
     margin-top: 2%;
 }
 
@@ -321,25 +321,25 @@ nav {
     padding: 1%;
 }
 
-#maincontent {
+.maincontent {
     float: left;
     margin: 1%;
     padding: 2%;
     background: #ffffff;
+	min-height: 48em;
     /* opacity: 0.8;
     filter: alpha(opacity=80); /* For IE8 and earlier */
 }
 
-    #maincontent h1 {
+    .maincontent h1 {
         font-size: 1.5em;
         font-weight: 100;
         text-transform: uppercase;
         text-align: left;
-        margin-bottom: 1%;
         color: #00557F;
     }
 
-    #maincontent h2, h3 {
+    .maincontent h2, h3 {
         font-size: 1.1em;
         font-weight: 100;
         text-transform: uppercase;
@@ -348,59 +348,96 @@ nav {
         color: #00557F;
     }
 
-    #maincontent p {
+    .maincontent p {
+        width: 100%;
         font-weight: 100;
         margin: 0px;
     }
 
-    #maincontent a {
+    .maincontent a {
         text-decoration: none;
+        color: blue;
     }
 
-        #maincontent a:hover {
+        .maincontent a:hover, #archives a:hover {
             color: red;
         }
 
-    #maincontent ul li {
+
+    .maincontent ul li {
         margin-left: 5%;
     }
 
-    #maincontent ol li {
+    .maincontent ol li {
         margin-left: 5%;
         line-height: 140%;
     }
+
+#archives ul li {
+    font-size: 1.1em;
+}
+
+    #archives ul li p {
+        margin: 0 7% 0 2%;
+        width: 91%;
+        font-size: .9em;
+    }
+
+#archives p span {
+    display: block;
+    text-align: center;
+    font-size: 1.15em;
+}
+
+#archives iframe {
+    width: 100%;
+    margin: 1% 0;
+    height: 23em;
+}
+
+table.contenttable {
+
+}
+	.contenttable tr {
 	
-.reports
-{
-width:100%;
-
-}
-
-
-.reports a
-{
-width:90%;
-font-weight:bold;
-color:#275078;
-display:table;
-}
-
-.reports a img
-{
-width:90%;
-display:table-cell;
-vertical-align:middle;
-
-}
-
-.reports a span
-{
-width:60%;
-display:table-cell;
-vertical-align:middle;
-}
-
-
+	}
+	
+	.contenttable td {
+	padding:1%;
+	}
+	.contenttable tr td:first-child {
+    width: 35%;
+	}
+	.contenttable tr td:last-child {
+    width: 65%;
+	}
+	
+	.contenttable td img {
+	width:95%;
+	}
+	
+	.contenttable td a img.border {
+	color:black;
+	border-width: thin;
+    border-style:groove;
+	}
+		.contenttable td a img.border:hover {
+	color:black;
+	}
+	
+		.contenttable td a {
+		display:block;
+		font-weight: bold;
+		color: #275078;
+		text-decoration:underline;
+		}
+		
+	.contenttable p a {
+	color:blue;
+	text-decoration:none;
+	font-weight:normal;
+	display:inline;
+	}
 
 
 #who {
@@ -469,4 +506,50 @@ footer {
     margin: 0 auto;
     border: none;
     position: relative;
+}
+
+img.googleimg
+{
+     margin-left: 13%;
+     max-width: 16px;
+     height: 30px;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    /* Styles */
+
+    a img.Data-icon {
+        width: 250px;
+        max-height: 320px;
+        border-width: thin;
+        border-style:groove;
+    }
+     a img.DoD-icon {
+        width: 250px;
+        max-height: 320px;
+    }
+}
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+ a img.DoD-icon {
+        width: 250px;
+        height: 100%;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+ a img.DoD-icon {
+        width: 250px;
+        height: 100%;
+    }
 }

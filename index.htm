@@ -1,25 +1,55 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
+
     <link rel="stylesheet" type="text/css" href="DSPOstylesheet.css">
     <link rel="stylesheet" type="text/css" href="DSPOstylesheet_mobile.css">
+    
     <!-- Bootstrap Core CSS -->
     <link href="carousel.css" rel="stylesheet">
-
-
 
     <link rel="shortcut icon" href="favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
+
     <title>Defense Suicide Prevention Office</title>
+
     <meta name="description" content="The Defense Suicide Prevention Office oversees all
 			strategic development, implementation, centralization, standardization, communication and
-			evaluation of DoD suicide and risk reduction programs, policies and surveillance activities.
-			To reduce the impact of suicide on military Service members and their families, DSPO uses a
-			range of approaches related to policy, research, communications, law and behavioral health.">
+			evaluation...">
+
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+    <meta http-equiv="pragma" content="no-cache">
+
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/carousel.js"></script>
+
+    <script language=JavaScript>
+    //<!--
+    //Disable right click script III- By Renigade (renigade@mediaone.net)
+    //For full source code, visit http://www.dynamicdrive.com
+
+    var message = "";
+    ///////////////////////////////////
+    function clickIE() { if (document.all) { (message); return false; } }
+    function clickNS(e) {
+        if (document.layers || (document.getElementById && !document.all)) {
+            if (e.which == 2 || e.which == 3) { (message); return false; }
+        }
+    }
+    if (document.layers) { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = clickNS; }
+    else { document.onmouseup = clickNS; document.oncontextmenu = clickIE; }
+    document.oncontextmenu = new Function("return false")
+    //
+    </script>
+
+
 
     <!--<script>
         $(document).ready(function() {
@@ -100,7 +130,7 @@
             </a>
         </div>
         <div class="left">
-            <a class="logo" href="index.html">
+            <a class="logo" href="index.htm">
                 <img src="images/DSPO-logo150px.gif" title="Defense Suicide Prevention Office" alt="DSPOlogo"/>
             </a>
             <h1 class="left">Defense Suicide Prevention Office</h1>
@@ -222,7 +252,7 @@
             <div class="original">
                 <p class="original">
                     The Defense Suicide Prevention Office is partnering with STAR Behavioral Health Providers Program to offer a number of training opportunities in several cities throughout 2015.
-                    Please <!--<a target="_parent" href="Docs/SBHP/SBHP Training (national) dates 1.23.15.pdf" onClick="ga('send', 'event', { eventCategory: 'Home Page', eventAction: 'SBHP Training Click', eventLabel: 'SBHP Training PDF'});"> 11 Feb 2015 --><a target="_parent" href="Docs/SBHP/National-Training-Dates-09Feb2015.pdf" onclick="ga('send', 'event', { eventCategory: 'Home Page', eventAction: 'SBHP National Training Click', eventLabel: 'SBHP National Training DL'});"><span style="color: #E19446; font-weight: bold; font-size:16px;">click here to download a PDF of cities and dates</span></a> or visit <a target="_blank" href="http://www.starproviders.org/" onclick="ga('send', 'event', { eventCategory: 'Home Page', eventAction: 'Star Click', eventLabel: 'SBHP Link'});"><span style="color: #E19446; font-weight: bold; font-size:16px;">www.starproviders.org</span></a> and click on the appropriate state and then click on the "Are You A Provider" button for updated information and registration.
+                    Please <!--<a target="_parent" href="Docs/SBHP/SBHP Training (national) dates 1.23.15.pdf" onClick="ga('send', 'event', { eventCategory: 'Home Page', eventAction: 'SBHP Training Click', eventLabel: 'SBHP Training PDF'});"> 11 Feb 2015 --><a target="_parent" href="Docs/SBHP/SBHP-National-Training-Dates-22Feb2015.pdf" onclick="ga('send', 'event', { eventCategory: 'Home Page', eventAction: 'SBHP National Training Click', eventLabel: 'SBHP National Training DL'});"><span style="color: #E19446; font-weight: bold; font-size:16px;">click here to download a PDF of cities and dates</span></a> or visit <a target="_blank" href="http://www.starproviders.org/" onclick="ga('send', 'event', { eventCategory: 'Home Page', eventAction: 'Star Click', eventLabel: 'SBHP Link'});"><span style="color: #E19446; font-weight: bold; font-size:16px;">www.starproviders.org</span></a> and click on the appropriate state and then click on the "Are You A Provider" button for updated information and registration.
                 </p>
             </div>
         </div>
@@ -296,6 +326,6 @@
 
 </body>
 
-<script src="js/carousel.js"></script>
+
 
 </html>
