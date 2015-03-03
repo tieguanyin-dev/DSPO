@@ -1,0 +1,6 @@
+Sitemap: http://www.suicideoutreach.org/index.html
+
+user-agent: *
+Disallow: /admin/
+Disallow: /beta/
+Disallow: /beta/
