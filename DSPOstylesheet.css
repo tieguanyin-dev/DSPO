@@ -322,10 +322,11 @@ nav {
 }
 
 .maincontent {
-    float: left;
+   
     margin: 1%;
     padding: 2%;
     background: #ffffff;
+	min-height: 48em;
     /* opacity: 0.8;
     filter: alpha(opacity=80); /* For IE8 and earlier */
 }
@@ -335,7 +336,6 @@ nav {
         font-weight: 100;
         text-transform: uppercase;
         text-align: left;
-        margin-bottom: 1%;
         color: #00557F;
     }
 
@@ -395,53 +395,49 @@ nav {
     height: 23em;
 }
 
-.reports {
-    width: 100%;
-    min-height: 45em;
+table.contenttable {
+
 }
-
-    .reports a {
-        width: 90%;
-        font-weight: bold;
-        color: #275078;
-        display: table;
-    }
-
-        .reports a img {
-            width: 90%;
-            display: table-cell;
-            vertical-align: middle;
-        }
-
-        .reports a span {
-            width: 60%;
-            display: table-cell;
-            vertical-align: middle;
-            text-decoration: none;
-            min-width: 150px;
-        }
-
-            .reports a span.text {
-                width: 100%;
-                font-weight: normal;
-                color: black;
-                display: inline-block;
-                text-decoration: none;
-            }
-
-    .reports span.inline {
-        display: inline;
-        color: blue;
-        width: 100%;
-        font-weight: normal;
-        vertical-align: top;
-        text-decoration: none;
-    }
-
-        .reports span.inline:hover {
-            color: red;
-        }
-
+	.contenttable tr {
+	
+	}
+	
+	.contenttable td {
+	padding:1%;
+	}
+	.contenttable tr td:first-child {
+    width: 35%;
+	}
+	.contenttable tr td:last-child {
+    width: 65%;
+	}
+	
+	.contenttable td img {
+	width:95%;
+	}
+	
+	.contenttable td a img.border {
+	color:black;
+	border-width: thin;
+    border-style:groove;
+	}
+		.contenttable td a img.border:hover {
+	color:black;
+	}
+	
+		.contenttable td a {
+		display:block;
+		font-weight: bold;
+		color: #275078;
+		text-decoration:underline;
+		}
+		
+	.contenttable p a {
+	color:blue;
+	text-decoration:none;
+	font-weight:normal;
+	display:inline;
+	}
 
 
 #who {
