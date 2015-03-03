@@ -1,6 +1,6 @@
 @import 'http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,greek-ext,cyrillic-ext,greek,vietnamese,cyrillic,latin-ext';
 ul#css3menu3{
-	margin:0;list-style:none;padding:0 3px 3px;padding-left: 7px;/*yuly*/background-color:none;border-width:0;border-style:solid;border-color:;font-size:0;z-index:999;position:relative;display:block;float:left;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;}
+	margin:0;list-style:none;padding:0 3px 3px;background-color:none;border-width:0;border-style:solid;border-color:;font-size:0;z-index:999;position:relative;display:block;float:left;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;}
 ul#css3menu3 li{
 	display:block;white-space:nowrap;font-size:0;}
 ul#css3menu3>li{
