@@ -1,0 +1,204 @@
+@media only screen and (min-width:600px) and (max-width:1075px) 
+{
+body
+{
+width:100%;
+margin:0 0 0 0;
+font-size:85%;
+}
+
+#head
+{
+width:98%;
+height:125px;
+margin: 1% 1%;
+}
+#head .left
+{
+height:125px;
+width:55%;
+}
+
+#head .right
+{
+width:220px;
+}
+}
+
+
+@media only screen and (max-width: 600px) 
+{
+body
+{
+width:100%;
+margin:0 0 0 0;
+}
+
+#head
+{
+height:205px;
+}
+#head .left
+{
+border-top:5px solid #275078;
+height:85px;
+width:98%;
+padding:1% 0 0 2%;
+
+}
+#head a.logo 
+{
+height:100%;
+}
+
+#head h1.left
+{
+font-size:1.6em;
+width:100%;
+
+border:none;
+}
+#head .right
+{
+width:100%;
+float:left;
+height:53%;
+padding-bottom:2%;
+}
+#head a.crisis
+{
+width:100%;
+float:left;
+}
+#head a.crisis img
+{
+height:100%;
+width:auto;
+}
+#head a.chat
+{
+float:left;
+}
+
+#nav{
+	margin: 2% 0 0 0;
+}
+#nav li{
+margin:0;
+	width:100%;
+	padding:.2% 0 .2% 0;
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+
+position:relative;
+}
+
+.left
+{
+width:100%;
+}
+#links
+{
+position: relative;
+}
+#links h2 
+{
+padding:.5em;
+}
+#links > h2 > a
+{
+margin: .2em auto 0 auto;
+width:50px;
+text-align: left;
+text-indent: -9999px;
+background-color: #616161;
+
+}
+#links > h2 >a:before,
+#links > h2 >a:after
+{
+position: absolute;
+border: 2px solid #fff;
+top: 35%;
+left: 25%;
+right: 25%;
+content: '';
+}
+#links > h2 >a:after
+{
+top: 60%;
+}
+#links:not( :target ) > h2 > a:first-of-type,
+#links:target > h2 > a:last-of-type
+{
+display: block;
+}
+#links > ul
+{
+height: auto;
+display: none;
+position: absolute;
+left: 0;
+right: 0;
+}
+#links:target > ul
+{
+display: block;
+position:relative;
+}
+#nav > ul > li
+{
+width: 100%;
+float: none;
+}
+ /* second level */
+ #links li ul
+{
+position: static;
+}
+
+.left img.fitness {
+    padding: 2% 0 2%;
+    max-height: 30%;
+    max-width: 30%;
+    visibility: hidden;
+    position: absolute;
+}
+
+#DLlink
+{
+    position: absolute;
+    visibility: hidden;
+}
+#videosection {
+    overflow: scroll;   
+
+}
+.right
+{
+float:left;
+width:100%;
+}
+#who, #mission, #vision
+{
+float:left;
+width:auto;
+padding:2.5%;
+background: #ffffff;
+opacity: 0.8;
+}
+.maincontent {
+min-height:0;
+}
+
+.contenttable p {
+font-size:90%;
+}
+
+
+footer img {
+    height: 10%;
+    width: 10%;
+}
+
+}
