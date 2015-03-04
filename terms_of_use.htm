@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="DSPOstylesheet.css">
-    <link rel="stylesheet" type="text/css" href="DSPOstylesheet_mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/DSPOstylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/DSPOstylesheet_mobile.css">
 
     <link rel="shortcut icon" href="favicon.ico">
     <meta charset="utf-8">
@@ -14,24 +14,6 @@
     <title>Terms of Use</title>    
     <meta name="description" content="The information presented on SuicideOutreach.org is considered public information and may be distributed or copied unless otherwise specified. Use of appropriate byline/photo/image credits is requested. ">
     
-
-    <script language=JavaScript>
-    <!--
-        //Disable right click script III- By Renigade (renigade@mediaone.net)
-        //For full source code, visit http://www.dynamicdrive.com
-
-        var message="";
-        ///////////////////////////////////
-        function clickIE() {if (document.all) {(message);return false;}}
-        function clickNS(e) {if (document.layers||(document.getElementById&&!document.all)) {
-            if (e.which==2||e.which==3) {(message);return false;}}}
-            if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
-            else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
-        document.oncontextmenu=new Function("return false")
-        // -->
-    </script>
-    <!-- GA script -->
-    <script type="text/javascript" src="bootstrap/js/4analytics.js"></script>
 
 </head>
 <body>
@@ -212,6 +194,11 @@
 
         </div>
     </footer>
+	
+    <script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/4analytics.js"></script>
+	<script src="js/hide_right_click.js"></script>
+	<script src="js/double_tap_touch.js"></script>
 </body>
 
 </html>
