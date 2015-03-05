@@ -9,96 +9,9 @@
 
     <meta name="description" content="Confidential support is only a click away. Chat anonymously online with a trained VA responder, 24/7/365.">
 
-    <link rel="stylesheet" type="text/css" href="../DSPOstylesheet.css">
-    <link rel="stylesheet" type="text/css" href="../DSPOstylesheet_mobile.css">
+    <link rel="stylesheet" type="text/css" href="../css/DSPOstylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../css/DSPOstylesheet_mobile.css">
 
-    <script language=JavaScript>
-        //<!--
-        //Disable right click script III- By Renigade (renigade@mediaone.net)
-        //For full source code, visit http://www.dynamicdrive.com
-
-        var message = "";
-        ///////////////////////////////////
-        function clickIE() { if (document.all) { (message); return false; } }
-        function clickNS(e) {
-            if (document.layers || (document.getElementById && !document.all)) {
-                if (e.which == 2 || e.which == 3) { (message); return false; }
-            }
-        }
-        if (document.layers) { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = clickNS; }
-        else { document.onmouseup = clickNS; document.oncontextmenu = clickIE; }
-        document.oncontextmenu = new Function("return false")
-        //
-    </script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!--<script>
-        $(document).ready(function() {
-
-            /* If mobile browser, prevent click on parent nav item from redirecting to URL */
-            if(is_touch_device()) {
-                //$('#mainmenu > li > a').attr('href' ,'#');
-                $('#nav li > ul').each(function (index, domEle) {
-                /* Method 1: Use this to modify the href on the <a> to # */
-                //$(domEle).prev('a').attr('href' ,'#');
-
-                /* Method 2: Use this to keep the href on the <a> intact but prevent the default action */
-                $(domEle).prev('a').click(function(event) {
-                event.preventDefault();
-                });
-            });
-        }
-
-        });
-
-        //check is this a mobile browser
-        function is_touch_device() {
-        return !!('ontouchstart' in window);
-        }
-    </script><-->
-
-    <script>
-        ; (function ($, window, document, undefined) {
-            $.fn.doubleTapToGo = function (params) {
-                if (!('ontouchstart' in window) &&
-                    !navigator.msMaxTouchPoints &&
-                    !navigator.userAgent.toLowerCase().match(/windows phone os 7/i)) return false;
-
-                this.each(function () {
-                    var curItem = false;
-
-                    $(this).on('click', function (e) {
-                        var item = $(this);
-                        if (item[0] != curItem[0]) {
-                            e.preventDefault();
-                            curItem = item;
-                        }
-                    });
-
-                    $(document).on('click touchstart MSPointerDown', function (e) {
-                        var resetItem = true,
-                            parents = $(e.target).parents();
-
-                        for (var i = 0; i < parents.length; i++)
-                            if (parents[i] == curItem[0])
-                                resetItem = false;
-
-                        if (resetItem)
-                            curItem = false;
-                    });
-                });
-                return this;
-            };
-        })(jQuery, window, document);
-    </script>
-
-    <script>
-        $(function () {
-            $('#nav li:has(ul)').doubleTapToGo();
-        });
-    </script>
-
-    <!-- GA script -->
-    <script type="text/javascript" src="../bootstrap/js/4analytics.js"></script>
 </head>
 <body>
     <div id="head">
@@ -159,11 +72,12 @@
     </nav>
     <div class="left">
         <div id="links">
+		<div>
             <h2>
                 Suicide Prevention Program Links
-                <a href="#links" title="Show Links">Show Links</a>
-                <a href="#" title="Hide Links">Hide Links</a>
-            </h2>
+			 </h2>
+                <div class="link_toggle"><button id="link_toggle"></button></div>
+			</div>
             <ul>
                 <li><a href="http://www.armyg1.army.mil/hr/suicide/" target="_blank">Army</a></li>
                 <li><a href="http://www.public.navy.mil/BUPERS-NPC/support/21st_century_sailor/suicide_prevention/Pages/default.aspx" target="_blank">Navy</a></li>
@@ -196,7 +110,7 @@
                     <tr>
                         <td>
                             <a href="../Docs/MCL_brochure_11-30.pdf" target="_blank" onclick="ga('send', 'event', { eventCategory: 'MCL Page', eventAction: 'MCL Brochure Graphic Click', eventLabel: 'MCL Brochure DL'});">
-                                <img src="../images/crisis1.jpg" title="Military Crisis Line Brochure" longdesc="Military Crisis Line Brochure" alt="MCL Brochure" />
+                                <img class="border" src="../images/crisis1.jpg" title="Military Crisis Line Brochure" longdesc="Military Crisis Line Brochure" alt="MCL Brochure" />
 
                             </a>
                         </td>
@@ -208,7 +122,7 @@
                     <tr>
                         <td>
                             <a href="../Docs/MCL_DoD%20poster%20[11x17][1].pdf" target="_blank" onclick="ga('send', 'event', { eventCategory: 'MCL Page', eventAction: 'MCL Poster Graphic Click', eventLabel: 'MCL Poster DL'});">
-                                <img src="../images/crisis2.jpg" title="Military Crisis Line Poster" longdesc="Military Crisis Line Poster" alt="MCL Poster" />
+                                <img class="border" src="../images/crisis2.jpg" title="Military Crisis Line Poster" longdesc="Military Crisis Line Poster" alt="MCL Poster" />
                                 
                             </a>
                         </td>
@@ -221,7 +135,7 @@
                     <tr>
                         <td>
                             <a href="../Docs/MCL_FactSheet.pdf" target="_blank" onclick="ga('send', 'event', { eventCategory: 'MCL Page', eventAction: 'MCL FactSheet Graphic Click', eventLabel: 'MCL FactSheet DL'});">
-                                <img border="0" src="../images/crisis3.jpg" title="Military Crisis Line Fact Sheet" longdesc="Military Crisis Line Fact Sheet" alt="MCL Fact Sheet" />
+                                <img class="border" src="../images/crisis3.jpg" title="Military Crisis Line Fact Sheet" longdesc="Military Crisis Line Fact Sheet" alt="MCL Fact Sheet" />
                                 
                             </a>
                         </td>
@@ -263,6 +177,12 @@
 
         </div>
     </footer>
+	
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<script src="../js/4analytics.js"></script>
+	<script src="../js/hide_right_click.js"></script>
+	<script src="../js/double_tap_touch.js"></script>
+	<script src="../js/link_toggle.js"></script>
 </body>
 
 </html>
