@@ -18,6 +18,10 @@ margin: 1% 1%;
 height:125px;
 width:55%;
 }
+#head a.logo 
+{
+width:125px;
+}
 
 #head .right
 {
@@ -49,6 +53,7 @@ padding:1% 0 0 2%;
 #head a.logo 
 {
 height:100%;
+width:85px;
 }
 
 #head h1.left
