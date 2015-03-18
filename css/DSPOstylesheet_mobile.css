@@ -146,7 +146,7 @@ position: relative;
     position: absolute;
     visibility: hidden;
 }
-#videosection {
+#videosection{
     overflow: scroll;   
 
 }
