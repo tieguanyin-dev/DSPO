@@ -1,559 +1,488 @@
-﻿body, div, h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, dl, small {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
+ body,div,h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, dl, small {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
 }
 
-html {
-    font-family: arial;
-    background: url(../images/DSPOBackground4_MostSimilar-2.gif)no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-<!-- for index2 -->
-#wrapper {
-    min-height: 100%;
-}
-
-body {
-    width: 75%;
-    margin: 0 auto;
-}
-
-#head {
-    margin: 1% 0 1% 0;
-    width: 100%;
-    float: left;
-    height: 150px;
-}
-
-    #head .left {
-        float: left;
-        height: 150px;
-        width: 65%;
-    }
-
-    #head a.logo {
-        float: left;
-        height: 100%;
-		width:150px;
-        margin-right: 2%;
-    }
-
-        #head a.logo img {
-            height: 100%;
-		
-        }
-
-    #head h1.left {
-        float: none;
-        display: table-cell;
-        vertical-align: middle;
-        font-weight: normal;
-        color: #275078;
-        font-size: 1.8em;
-    }
-
-    #head .right {
-        width: 256px;
-        height: 100%;
-        float: right;
-    }
-
-    #head a.crisis {
-        width: 100%;
-        height: 70%;
-        float: right;
-    }
-
-        #head a.crisis img {
-            width: 100%;
-            display: block;
-            margin-left: auto;
-            margin: auto;
-        }
-
-    #head a.chat {
-        height: 30%;
-        width: 100%;
-        float: right;
-    }
-
-        #head a.chat img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-nav {
-    width: 100%;
-    float: left;
-}
-
-#nav {
-    list-style: none;
-    float: left;
-    width: 100%;
-}
-
-    #nav li {
-        float: left;
-        position: relative;
-        width: 24.8%;
-        text-align: center;
-        padding: .1%;
-    }
-
-    #nav a {
-        display: block;
-        color: #FFF;
-        background: #1E4E7C;
-        text-decoration: none;
-        font-size: 1.3em;
-        padding: 1em 0;
-        height: 100%;
-    }
-
-        #nav a:hover {
-            color: #fff;
-            background: #0A7BC6;
-        }
-
-    /*--- DROPDOWN ---*/
-    #nav ul {
-        background: #fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
-        background: rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
-        list-style: none;
-        width: 100%;
-        position: absolute;
-        left: -9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
-        z-index: 5;
-    }
-
-        #nav ul li {
-            width: 100%;
-            border-top: 1px solid white; /* Introducing a padding between the li and the a give the illusion spaced items */
-            float: none;
-        }
-
-        #nav ul a {
-            font-size: 95%;
-        }
-
-    #nav li:hover ul { /* Display the dropdown on hover */
-        left: 0; /* Bring back on-screen when needed */
-    }
-
-    #nav li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
-        background: #0A7BC6;
-    }
-
-    #nav li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
-        text-decoration: none;
-    }
-
-    #nav li:hover ul li a:hover { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
-        background: #6E7F8F;
-    }
-
-.left {
-    width: 26%;
-    float: left;
-}
-
-#links {
-    width: 100%;
-	float:left;
-    margin-top: 10px;
-}
-	#links>div{
-	    background: white;
-	}
-	
-		#links h2 {
-			display:table-cell;
-			color: #616161;
-			font-size: 1.5em;
-			text-align: center;
-			padding: 1em;	
-		}
-		
-		.link_toggle{
-			display:none;
-			width:1%;
-		}
-
-		.link_toggle  button{
-			border:none;
-			height:3em;
-			width:3em;
-			background:url(../images/menu-icon.png)no-repeat center;
-			-webkit-background-size: contain;
-			-moz-background-size: contain;
-			-o-background-size: contain;
-			background-size: contain;
-			cursor:pointer;
-		}
-		
-    #links  ul {
-		list-style: none;
-    }
-	
-	    #links li {
-			padding: .5% 0;
-		}
-	
-		#links a {
-			display:block;
-			text-decoration: none;
-			color: white;
-			font-size: 1.3em;
-			background: #616161;
-			padding: 2% 1% 1% 3%;
-		}
-
-			#links a:hover {
-				color: #FFF;
-				background: #1E4E7C;
-			}
-
-
-
-
-
-
-	
-
-.left img.fitness {
-    padding-top: 5%;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.right {
-    float: left;
-    width: 74%;
-}
-
-#slider {
-    margin: 1%;
-}
-
-#carousel h2 {
-    position: relative;
-    text-align: center;
-    font-size: 1.3em;
-    margin-top: 2%;
+html
+{
+font-family:arial;
+background:white;
 }
 
 
-#static {
+body
+{
+float:left;
+margin:0 15% 0 15%;
+box-shadow: 0 0 15px 10px rgba(80, 78, 78, 0.40);
 }
 
-.star {
-    background: url(img/SBPH/bg.png) repeat;
-    opacity: 0.8;
-    margin: 10px;
-    border-style: inherit;
+
+header
+{
+background:url(../images/DSPOBackground4_MostSimilar-2_crop.gif)no-repeat center top;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+padding:1% 2% 1% 2%;
+float:left;
+width:96%;
+height:100px;
+
+}
+.headleft, #logo, #logo a, #logo h1
+{
+height:inherit;
 }
 
-    .star th {
-        background: url(img/SBHP/splash_logo.png) no-repeat right top;
-        opacity: 0.8;
-    }
 
-    .star p {
-        color: #000;
-        margin-left: 10px;
-        margin-right: 4px;
-        padding-bottom: 20px;
-        margin-bottom: 5px;
-    }
-
-.original {
-    background-color: #1e4e7c;
-    margin: 10px;
-    border-color: #000000;
-    border-style: double;
+#logo a
+{
+float:left;
+text-decoration:none;
+padding-right:1%;
+width:100px;
 }
-
-    .original p {
-        color: #ffffff;
-        margin: 10px;
-        border-style: none;
-        padding: 20px;
-    }
-
-    .original a {
-        text-decoration: none;
-    }
-
-#DLlink {
-    float: left;
-    margin: 1%;
-    padding: 5%;
-}
-
-    #DLlink a {
-        color: #275078;
-    }
-
-        #DLlink a:hover {
-            color: red;
-        }
-
-    #DLlink p.title {
-        font-weight: 600;
-        padding-bottom: 10%;
-    }
-
-
-#videosection {
-    max-width: 100%;
-    height: 300px;
-    background: #808080;
-    margin: 1%;
-    padding: 1%;
-}
-
-#videosection iframe {
-width:100%;
+#logo a img
+{
 height:100%;
 }
 
-.maincontent {
-   
-    margin: 1%;
-    padding: 2%;
-    background: #ffffff;
-	min-height: 48em;
-    /* opacity: 0.8;
-    filter: alpha(opacity=80); /* For IE8 and earlier */
+#logo h1
+{
+float: none;
+display: table-cell;
+vertical-align: middle;
+font-weight: normal;
+color: #275078;
+font-size: 1.8em;
+font-family:"Times New Roman", Times, serif;
+font-variant:small-caps;
+}
+.headright
+{
+width:20%;
+height:100%;
+float:right;
+
+}
+#crisis 
+{
+height:70px;
+float:right;
+}
+#crisis img
+{
+height:100%;
+display:block;
+margin-left:auto;
+margin:auto;
+}
+#chat 
+{
+height:30px;
+float:right;
+}
+#chat img
+{
+display:block;
+height:100%;
+margin-left:auto;
+margin-right:auto;
 }
 
-    .maincontent h1 {
-        font-size: 1.5em;
-        font-weight: 100;
-        text-transform: uppercase;
-        text-align: left;
-        color: #00557F;
-    }
-
-    .maincontent h2, h3 {
-        font-size: 1.1em;
-        font-weight: 100;
-        text-transform: uppercase;
-        text-align: left;
-        margin-bottom: 1%;
-        color: #00557F;
-    }
-
-    .maincontent p {
-        width: 100%;
-        font-weight: 100;
-        margin: 0px;
-    }
-
-    .maincontent a {
-        text-decoration: none;
-        color: blue;
-    }
-
-        .maincontent a:hover, #archives a:hover {
-            color: red;
-        }
-
-
-    .maincontent ul li {
-        margin-left: 5%;
-    }
-
-    .maincontent ol li {
-        margin-left: 5%;
-        line-height: 140%;
-    }
-
-#archives ul li {
-    font-size: 1.1em;
+nav
+{
+width:100%;
+float:left;
+	background: url("../images/bars/background_mainmenu.gif") repeat-x scroll left top #012D5A;
 }
 
-    #archives ul li p {
-        margin: 0 7% 0 2%;
-        width: 91%;
-        font-size: .9em;
-    }
+#nav{
+float:left;
+    list-style:none;
+ width:98%;
+	font-family:"Times New Roman", Times, serif;
+	text-transform:uppercase;
+	
+border-top:1px solid #CCC;
+border-bottom:1px solid #CCC;
+	padding-left:2%;
+}
+#nav li{
+    float:left;
+position:relative;
+	text-align:left;
+	padding-right:5%;
+	background: url("../images/bars/background_mainmenu.gif") repeat-x scroll left top #012D5A;
+	
+}
+#nav a{
+    display:block;
+    color:#FFF;
+    text-decoration:none;
+	font-size:.8em;
+	font-weight:bold;
+	padding:1em 1em;
+	white-space:nowrap;
+}
+#nav a:hover{
+    color:#B41019;
+    background:#FFF;
 
-#archives p span {
+}
+#nav li.last
+{
+margin:0;
+
+}
+
+
+/*--- DROPDOWN ---*/
+#nav ul{
+    list-style:none;
+    position:absolute;
+    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+	z-index:5;
+
+}
+
+
+#nav ul li{
+/*border-top:1px solid white;  Introducing a padding between the li and the a give the illusion spaced items */
+float:none;
+
+padding-right:0;
+}
+#nav ul:hover{
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+left:0; /* Bring back on-screen when needed */
+background:#FFF;
+border-top:none;
+box-shadow: 0 5px 5px #7E7A7A;
+
+
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+background:#FFF;
+color:#B41019;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+text-decoration:none;
+color:#1E4E7C;
+font-size:.7em;
+
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+background:#1E4E7C;
+color:#FFF;
+}
+
+#links ul{
+
+margin: .5em 0 .5em 1.3em ;
+list-style:none;
+}
+
+#links a {
+display:block;
+color:#043668;
+font-size:.8em;
+text-decoration:none;
+}
+#links a:hover {
+color:#B41019;
+text-decoration:underline;
+}
+	.link_toggle{
+		display:none;
+		width:1%;
+	}
+
+	.link_toggle  button{
+		border:none;
+		height:2.5em;
+		width:2.5em;
+		background:url(../images/menu-icon.png)no-repeat center;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+		cursor:pointer;
+	}
+.leftbody
+{
+box-sizing:border-box;
+width:30%;
+float:left;
+padding:0 .5em;
+
+}
+.rightbody
+{
+box-sizing:border-box;
+float:right;
+width:70%;
+padding:0 .5em;
+
+}
+
+.maincontent{
+box-sizing:border-box;
+
+width:100%;
+
+min-height:33em;
+}
+
+h2
+{
+
+background: url("../images/bars/background_contentblocktitle1.gif") repeat-x scroll left top #E5E9ED;
+border: 1px solid #D7DDE3;
+color:black;
+font-size:.8em;
+text-align:left;
+padding:.5em;
+margin:.5em 0;
+
+}
+
+h3, .maincontent ul, .maincontent > ol{
+box-sizing:border-box;
+width:100%;
+color: #043668;
+text-transform: uppercase;
+font-size:1em;
+padding:.5em .5em; 
+font-weight:bold;
+}
+
+p
+{
+box-sizing:border-box;
+width:100%;
+padding:.5em 1em;
+font-size:.8em;
+vertical-align:center;
+}
+
+p span {
     display: block;
     text-align: center;
-    font-size: 1.15em;
+	font-size:1.1em;
+}
+a
+{
+color:#3B81C6;
+text-decoration:none;
+}
+a:hover, .maincontent a:hover
+{
+color:#B41019;
+text-decoration:underline;
+}
+b{
+font-weight:bold;
+}
+.maincontent li
+{
+margin:.5em 1.5em .5em 1.5em;
+font-size:.8em;
+color:black;
+font-weight:normal;
+text-transform:none;
 }
 
-#archives iframe {
-    width: 100%;
-    margin: 1% 0;
-    height: 23em;
+#vision a
+{
+width:100%;
 }
+#vision a img
+{
+display:block;
+margin-left:auto;
+margin-right:auto;
+width:90%;
+}
+
+#carousel iframe
+{
+width:100%;
+border:none;
+}
+
+#slider
+{
+box-sizing:border-box;
+display:inline-block;
+width:100%;
+padding:.5em 1em .5em 1em;
+}
+
+.seals div{
+text-align:center;
+}
+.seals a {
+display:inline-block;
+width:10%;
+padding:0 1%;
+}
+.seals img{
+width:100%;
+}
+.indent {
+margin-left:.5em;
+}
+.indent ul{
+color: black;
+text-transform: none;
+font-size:.9em;
+font-weight:normal;
+}
+.indent li{
+font-size:.9em;
+}
+
 
 table.contenttable {
-
+padding:0 .25em;
 }
-	.contenttable tr {
-	
-	}
 	
 	.contenttable td {
-	padding:1%;
+		padding:.5em .5em;
 	}
 	.contenttable tr td:first-child {
-    width: 35%;
+    width: 30%;
 	}
 	.contenttable tr td:last-child {
-    width: 65%;
+    width: 70%;
+	}
+	.contenttable tr td:last-child > a {
+	padding-bottom:.5em;
 	}
 	
 	.contenttable td img {
-	width:95%;
+	width:100%;
 	}
 	
 	.contenttable td  img.border {
-	width:94.25%;
+	box-sizing:border-box;
 	color:black;
 	border-width: thin;
     border-style:groove;
 	}
-		.contenttable td a img.border:hover {
+	.contenttable td a img.border:hover {
 	color:black;
 	}
-	
-		.contenttable td a {
+	.contenttable td > a {
 		display:block;
 		font-weight: bold;
 		color: #275078;
 		text-decoration:underline;
-		}
-		
-	.contenttable p a {
-	color:blue;
-	text-decoration:none;
-	font-weight:normal;
-	display:inline;
 	}
+	.contenttable p{
+	padding:0 0 .5em 0;
+	}	
 
-
-#who {
-    float: left;
-    margin: 1%;
-    padding: 5%;
+#prezi {
+    width: 100%;
+    margin:.5em 0;
+    height: 23em;
 }
 
-    #who h2, #mission h2, #vision h2 {
-        font-size: 1.5em;
-        font-weight: 100;
-        text-align: center;
-        margin-bottom: 1%;
-        color: #00557F;
-    }
 
-    #who p, #mission p, #vision p {
-        font-weight: 100;
-        margin: 0px;
-    }
 
-#mission, #vision {
-    float: left;
-    width: 43%;
-    padding: 2.5%;
-    margin: 1%;
-}
+
+
+
+
+
+
+
+
+
 
 footer {
-    width: 100%;
-    float: left;
-    padding-bottom: 50px;
-    margin-top: 20px;
-}
-
-#footer {
+float:left;
     text-align: center;
     margin: 0 auto;
-    padding: 2% 0 2%;
+    padding: 2% 0;
     bottom: 0;
     width: 100%;
-    height: 100%; /* Height of the footer */
-    background: white;
+    background:#D5D7DA;
+	margin:1% 0 2% 0;
 }
 
-    #footer p.Disclaimer:before {
-        content: "Disclaimer:The Defense Suicide Prevention Office is a policy office and does not provide crisis services.";
-    }
-
-    #footer p.Crisis:before {
+footer p {
+padding:1% .5em;
+margin:0;
+font-size:100%;
+width:68%;
+float:right;
+}
+    footer p span, footer span a {
+		font-size:100%;
         color: red;
-        content: "If in crisis, click on the Military Crisis Line logo above for immediate assistance.";
     }
-
-    #footer p.FooterLinks a {
-        font-variant: small-caps;
-        text-decoration: none;
-        color: #275078;
-    }
-
-        #footer p.FooterLinks a:hover {
-            font-weight: bold;
-        }
-
-.Medallion {
-    margin: 0 auto;
-    border: none;
-    position: relative;
+	
+	footer span a {
+	text-decoration:underline;
+	}
+footer div{
+width:25%;
+padding:0 0 0 2%;
+float:left;
+display:inline-block;
 }
 
-img.googleimg
+footer ul {
+width:50%;
+float:left;
+list-style:none;
+text-align:left;
+}
+footer li{
+
+}
+footer a{
+font-size:90%;
+text-decoration:none;
+color:#043668;
+}
+footer a:hover
 {
-     margin-left: 13%;
-     max-width: 16px;
-     height: 30px;
+color:#B41019;
+text-decoration:underline;
 }
 
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-    /* Styles */
 
-    a img.Data-icon {
-        width: 250px;
-        max-height: 320px;
-        border-width: thin;
-        border-style:groove;
-    }
-     a img.DoD-icon {
-        width: 250px;
-        max-height: 320px;
-    }
-}
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-/* Styles */
- a img.DoD-icon {
-        width: 250px;
-        height: 100%;
-    }
-}
 
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-/* Styles */
- a img.DoD-icon {
-        width: 250px;
-        height: 100%;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

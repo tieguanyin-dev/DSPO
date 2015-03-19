@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+      <!--<link rel="stylesheet" href="css/bootstrap.css" media="screen" />-->
+    <link rel="stylesheet" href="carousel.css" media="screen" />
+ 
+    <style>
+    .jcarousel {
+        position: relative;
+        overflow: hidden;
+        /* You need at least a height, adjust this to your needs */
+        height: 200px;
+    }
+
+    .jcarousel ul {
+        width: 20000em;
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .jcarousel li {
+        float: left;
+    }
+    </style>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <p id="loginStuff">Welcome</p>
+    <nav>
+        <ul>
+            <li>a</li>
+            <li>a</li>
+            <li>a  </li>
+        </ul>
+    </nav>
+    
+    <div id="columnWrap">
+        <div class="left-col">
+
+<div class="jcarousel">
+    <ul>
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+    </ul>
+</div>
+
+
+        </div>
+        <div class="right-col">
+        
+        </div>
+    </div>
+    <div id="footer">
+    
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ 
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.jcarousel').jcarousel({
+                // Configuration goes here
+            });
+        });
+    </script>
+  <!--<script src="js/scripts.js"></script>-->
+</body>
+</html>
+
