@@ -15,23 +15,21 @@ background:white;
 body
 {
 float:left;
-margin:0 15% 0 15%;
+margin:0 20% 0 20%;
 box-shadow: 0 0 15px 10px rgba(80, 78, 78, 0.40);
 }
 
 
 header
 {
-background:url(../images/DSPOBackground4_MostSimilar-2_crop.gif)no-repeat center top;
- -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-padding:1% 2% 1% 2%;
-float:left;
-width:96%;
-height:100px;
-
+width:100%;
+height:90px;
+background:url(../images/header.gif)repeat-x scroll center bottom;
+ -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+padding:1% 0;
 }
 .headleft, #logo, #logo a, #logo h1
 {
@@ -43,7 +41,7 @@ height:inherit;
 {
 float:left;
 text-decoration:none;
-padding-right:1%;
+padding:0 1% 0 2%;
 width:100px;
 }
 #logo a img
@@ -67,11 +65,11 @@ font-variant:small-caps;
 width:20%;
 height:100%;
 float:right;
-
+padding-right:2%;
 }
 #crisis 
 {
-height:70px;
+height:60px;
 float:right;
 }
 #crisis img
@@ -83,7 +81,7 @@ margin:auto;
 }
 #chat 
 {
-height:30px;
+height:25px;
 float:right;
 }
 #chat img
@@ -98,7 +96,7 @@ nav
 {
 width:100%;
 float:left;
-	background: url("../images/bars/background_mainmenu.gif") repeat-x scroll left top #012D5A;
+	background: url(../images/bars/background-mainmenu.gif) repeat-x scroll left top #012D5A;
 }
 
 #nav{
@@ -108,7 +106,7 @@ float:left;
 	font-family:"Times New Roman", Times, serif;
 	text-transform:uppercase;
 	
-border-top:1px solid #CCC;
+
 border-bottom:1px solid #CCC;
 	padding-left:2%;
 }
@@ -117,7 +115,7 @@ border-bottom:1px solid #CCC;
 position:relative;
 	text-align:left;
 	padding-right:5%;
-	background: url("../images/bars/background_mainmenu.gif") repeat-x scroll left top #012D5A;
+	background: url(../images/bars/background-mainmenu.gif) repeat-x scroll left top #012D5A;
 	
 }
 #nav a{
@@ -236,13 +234,13 @@ box-sizing:border-box;
 
 width:100%;
 
-min-height:33em;
+min-height:600px;
 }
 
 h2
 {
 
-background: url("../images/bars/background_contentblocktitle1.gif") repeat-x scroll left top #E5E9ED;
+background: url(../images/bars/background-contentblocktitle1.gif) repeat-x scroll left top #E5E9ED;
 border: 1px solid #D7DDE3;
 color:black;
 font-size:.8em;
@@ -414,8 +412,8 @@ float:left;
     padding: 2% 0;
     bottom: 0;
     width: 100%;
-    background:#D5D7DA;
-	margin:1% 0 2% 0;
+	background:url(../images/footer.gif)repeat-x scroll;
+	margin:1% 0 0 0;
 }
 
 footer p {
