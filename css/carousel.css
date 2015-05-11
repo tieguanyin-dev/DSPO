@@ -1,7 +1,15 @@
 
-img, iframe{
+.slide-image,.slide-image iframe{
   vertical-align: middle;
 }
+
+.slide-image,.slide-image iframe{
+  vertical-align: middle;
+  margin:auto;
+  width:100%;
+}
+
+
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img ,
@@ -10,13 +18,13 @@ img, iframe{
 {
   display: block;
   max-width: 100%;
-  height: 25em;
+
 }
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('fonts/glyphicons-halflings-regular.eot');
-  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
   .glyphicon {
   position: relative;
@@ -36,17 +44,8 @@ img, iframe{
 .glyphicon-chevron-right:before {
   content: "\e080";
   }
-iframe
-{
-border:none;
-width:100%;
-height:100%;
-}
-.slide-image
-{
-width:100%;
-height:100%;
-}
+
+
 
 .carousel {
   position: relative;
@@ -69,8 +68,8 @@ height:100%;
   line-height: 1;
 }
 @media all and (transform-3d), (-webkit-transform-3d) {
-  .carousel-inner > .item {
-    -webkit-transition: -webkit-transform .6s ease-in-out;
+   .carousel-inner > .item {
+   -webkit-transition: -webkit-transform .6s ease-in-out;
          -o-transition:      -o-transform .6s ease-in-out;
             transition:         transform .6s ease-in-out;
 
@@ -78,7 +77,8 @@ height:100%;
             backface-visibility: hidden;
     -webkit-perspective: 1000;
             perspective: 1000;
-  }
+  } 
+  
   .carousel-inner > .item.next,
   .carousel-inner > .item.active.right {
     left: 0;
@@ -160,8 +160,7 @@ height:100%;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
 }
-.carousel-control:hover,
-.carousel-control:focus {
+.carousel-control:hover {
   color: #fff;
   text-decoration: none;
   filter: alpha(opacity=90);
@@ -205,7 +204,7 @@ height:100%;
   position: absolute;
   bottom: 10px;
   left: 50%;
- /* z-index: 15; */
+ z-index: 15; 
   width: 60%;
   padding-left: 0;
   margin-left: -30%;
@@ -221,14 +220,14 @@ height:100%;
   cursor: pointer;
   background-color: #000 \9;
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #fff;
+  border: 1px solid #B4B5B7;
   border-radius: 10px;
 }
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: #fff;
+  background-color: #B4B5B7;
 }
 .carousel-caption {
   position: absolute;
@@ -255,32 +254,43 @@ height:100%;
 {
   display: block;
   max-width: 100%;
-  height: 15em;
+
 }
-{
+
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
   .carousel-control .icon-next {
     width: 30px;
     height: 30px;
-    margin-top: -15px;
-    font-size: 30px;
+    margin-top: -10px;
+    font-size: 20px;
   }
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .icon-prev {
-    margin-left: -15px;
+    margin-left: -20px;
   }
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next {
-    margin-right: -15px;
+    margin-right: -20px;
   }
   .carousel-caption {
     right: 20%;
     left: 20%;
     padding-bottom: 30px;
   }
+  
   .carousel-indicators {
-    bottom: 20px;
-  }
+  bottom: 0px;
+}
+  .carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  border-radius: 7px;
+}
+.carousel-indicators .active {
+  width: 9px;
+  height: 9px;
+
+}
 }
