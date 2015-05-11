@@ -234,7 +234,7 @@ box-sizing:border-box;
 
 width:100%;
 
-min-height:600px;
+min-height:500px;
 }
 
 h2
@@ -327,7 +327,7 @@ text-align:center;
 }
 .seals a {
 display:inline-block;
-width:10%;
+width:12%;
 padding:0 1%;
 }
 .seals img{
@@ -393,7 +393,12 @@ padding:0 .25em;
     height: 23em;
 }
 
+#photostream
+{
+box-sizing:border-box;
+padding: .5em 1em;
 
+}
 
 
 
