@@ -98,24 +98,24 @@ margin-left:5%;
 position: relative;
 }
 	#links div {
-		background: url("../images/bars/background_contentblocktitle1.gif") repeat-x scroll left top #E5E9ED;
+		background: url(../images/bars/background-contentblocktitle1.gif) repeat-x scroll left top #E5E9ED;
 		border: 1px solid #D7DDE3;
 		padding-right:3%;
 		margin:.5em 0;
 	}
 		#links h2 
 		{
-		background:none;
 		border:none;
 		display:table-cell;
 		font-size: 1.2em;
 		}
 
-		.link_toggle {
+		#links div.link_toggle {
+			border:none;
 			display:table-cell;
 			vertical-align:middle;
-			
 		}
+			
 	#links ul
 	{
 	margin:0;
