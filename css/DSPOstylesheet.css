@@ -181,9 +181,10 @@ color:#FFF;
 }
 
 #links ul{
-
-margin: .5em 0 .5em 1.3em ;
+margin:0;
+padding: 0 1em .5em;
 list-style:none;
+text-indent:none;
 }
 
 #links a {
@@ -264,7 +265,7 @@ p
 {
 box-sizing:border-box;
 width:100%;
-padding:.5em 1em;
+padding:0 1em .5em;
 font-size:.8em;
 vertical-align:center;
 }
@@ -422,10 +423,10 @@ float:left;
 }
 
 footer p {
-padding:1% .5em;
+padding:1% 1em;
 margin:0;
-font-size:100%;
-width:68%;
+font-size:90%;
+width:70%;
 float:right;
 }
     footer p span, footer span a {
