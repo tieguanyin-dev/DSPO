@@ -17,7 +17,9 @@
 			 <meta name="google-site-verification" content="C36oPLLKnwRg22t35Q2NQjz-uLnkVAMRWzJ6InvhuCo" />
   		
 		<link href="css/carousel.css" rel="stylesheet">
-		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="galleria/galleria-1.4.2.js"></script>
+		<script src="galleria/plugins/flickr/galleria.flickr.min.js"></script>
 	</head>
 		<body>
 	
@@ -114,14 +116,33 @@
 				</div>
 		
 				<h2>Department of Defense Photostream</h2>
+				 
+				<div id="photostream">
+				<div class="galleria">
+
+					<script>
+					Galleria.run('.galleria', {
+						autoplay:5000,
+						flickr: 'user:39955793@N07',
+						flickrOptions: {
+							sort: 'date-posted-asc'
+						}
+					});
+					</script>
+				</div>
+				</div>
+				<script>
+					Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+					Galleria.run('.galleria');
+				</script>
 				
-				<!-- <div id="photostream"style='position: relative; padding-bottom: 101%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=100&size=big&userId=39955793@N07&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div> -->
+				<!--<div id="photostream"style='position: relative; padding-bottom: 101%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=100&size=big&userId=39955793@N07&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:95%; position: absolute; top:0; left:0;' ></iframe></div>
 				
 				<div id="photostream">
 				
 					<object width="100%" height="333"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F39955793%40N07%2Fshow%2F&page_show_back_url=%2Fphotos%2F39955793%40N07%2F&user_id=39955793@N07&jump_to="></param> <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F39955793%40N07%2Fshow%2F&page_show_back_url=%2Fphotos%2F39955793%40N07%2F&user_id=39955793@N07&jump_to=" width="100%" height="333"></embed></object>
 				
-				</div>
+				</div>-->
 			</div>
 		</div>
 			<div class="leftbody">
@@ -198,6 +219,7 @@
 	<script src="js/carousel.js"></script>
 	<script src="js/size_iframe.js"></script>
 	<script src="js/link_toggle.js"></script>
+
 </body>
 
 

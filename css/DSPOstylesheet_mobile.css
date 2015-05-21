@@ -150,7 +150,11 @@ font-size:1em;
 
 #vision a img
 {
+display:block;
+margin-left:auto;
+margin-right:auto;
 width:50%;
+
 }
 #DLlink{
 display:none;
